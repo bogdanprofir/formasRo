@@ -12,34 +12,37 @@
   <body>
     <header>
       <div class="navbar">
-        <div class="logo"><a href="/index.html"></a></div>
-        <ul class="links">
-          <li><a href="/index.html">Acasa</a></li>
-          <li><a href="/src/pages/Cariere/index.html">Cariere</a></li>
-          <li>
-            <a href="/src/pages/cursCalificare/index.html">Curs Calificare</a>
-          </li>
-          <li><a href="/src/pages/Specializari/index.html">Specializari</a></li>
-          <li><a href="/src/pages/Tabere/index.html">Tabere</a></li>
-          <li><a href="/src/pages/Galerie/index.html">Galerie</a></li>
-        </ul>
-        <a href="#" class="action_btn">Contacteaza-ne </a>
-        <div class="toggle_btn">
-          <i class="fa-solid fa-bars" style="color: #fbfbfb;"></i>
-        </div>
+          <div class="logo"><a href="/index.html"></a></div>
+          <ul class="links">
+              <li><a href="/index.html">Acasa</a></li>
+              <li><a href="/src/pages/cursAcreditat/index.html">Curs Acreditat</a></li>
+              <li><a href="/src/pages/specializari/index.html">Specializari masaj</a></li>
+              <li><a href="/src/pages/tabereMasaj/index.html">Tabere Masaj</a></li>
+              <li><a href="/src/pages/competitii/index.html">Competitii</a></li>
+              <li><a href="/src/pages/Cariere/index.html">Cariere</a></li>
+              <li><a href="/src/pages/Galerie/index.html">Galerie</a></li>
+              <li><a href="./src/pages/Blog/index.html">Blog</a></li>
+          </ul>
+          <a href="/src/pages/Contact/index.html" class="action_btn">Contacteaza-ne </a>
+              <div class="toggle_btn">
+                  <i class="fa-solid fa-bars" style="color: #fbfbfb;"></i>
+              </div>
+          
       </div>
       <div class="dropdown_menu">
-        <li><a href="/index.html">Acasa</a></li>
-        <li><a href="/src/pages/Cariere/index.html">Cariere</a></li>
-        <li>
-          <a href="/src/pages/cursCalificare/index.html">Curs Calificare</a>
-        </li>
-        <li><a href="/src/pages/Specializari/index.html">Specializari</a></li>
-        <li><a href="/src/pages/Tabere/index.html">Tabere</a></li>
-        <li><a href="/src/pages/Galerie/index.html">Galerie</a></li>
-        <li><a href="#" class="action_btn">Contacteaza-ne </a></li>
+          <ul>
+              <li><a href="/index.html">Acasa</a></li>
+              <li><a href="/src/pages/cursAcreditat/index.html">Curs Acreditat</a></li>
+              <li><a href="/src/pages/specializari/index.html">Specializari masaj</a></li>
+              <li><a href="/src/pages/tabereMasaj/index.html">Tabere Masaj</a></li>
+              <li><a href="/src/pages/competitii/index.html">Competitii</a></li>
+              <li><a href="/src/pages/Cariere/index.html">Cariere</a></li>
+              <li><a href="/src/pages/Galerie/index.html">Galerie</a></li>
+              <li><a href="./src/pages/Blog/index.html">Blog</a></li>
+              <li><a href="/src/pages/Contact/index.html" class="action_btn"> Contacteaza-ne </a></li>
+            </ul>
       </div>
-    </header>
+  </header>
 
     <div class="container">
       <span class="big-circle"></span>
@@ -54,15 +57,15 @@
           <div class="info">
             <div class="information">
               <img src="/src/assets/images/location.png" class="icon" alt="" />
-              <p>str. Vasile Conta nr.3, Iasi</p>
+              <p>Aleea Tudor Neculai, nr.160b, Iasi</p>
             </div>
             <div class="information">
               <img src="/src/assets/images/email.png" class="icon" alt="" />
-              <p>office@formas.ro</p>
+              <p>formasro@yahoo.com</p>
             </div>
             <div class="information">
               <img src="/src/assets/images/phone.png" class="icon" alt="" />
-              <p>+407XXXXXXXX</p>
+              <p>+40758786732</p>
             </div>
           </div>
 
@@ -91,7 +94,7 @@
           <span class="circle one"></span>
           <span class="circle two"></span>
 
-          <form action="https://formkeep.com/f/47158a6c1431"accept-charset="UTF-8"enctype="multipart/form-data"method="POST" autocomplete="off">
+          <form onsubmit="sendEmail(); this.reset(); return false;">
             <h3 class="title">Contact</h3>
             <div class="input-container">
               <input type="text" name="name" class="input" />
@@ -141,8 +144,9 @@
         </li>
       </ul>
       <div class="sigle">
-        <img src="/src/assets/images/download.jpg" alt="photo">
-        <img src="/src/assets/images/Flag_of_Europe.svg.png" alt="UE">
+        <a href="http://www.edu.ro"><img src="/src/assets/images/download.jpg" alt="photo"></a>
+        <a href="https://european-union.europa.eu/index_ro"><img src="/src/assets/images/Flag_of_Europe.svg.png" alt="UE"></a>
+        <a href="https://mmuncii.ro/j33/index.php/ro/"><img src="/src/assets/images/MMJS-logo.jpg" alt="photo"></a>
       </div>
       <p>&copy;FORMAS 2023 | Produced by Deiso</p>
 
@@ -161,5 +165,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="/src/pages/Contact/index.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </body>
 </html>

@@ -75,21 +75,53 @@ inputs.forEach((input) => {
 
 // contact form ELASTICEMAIL
 
-function sendEmail () {
+// function sendEmail () {
+//   Email.send({
+//     Host : "smtp.elasticemail.com",
+//     Username : "gourmetica.ro@gmail.com",
+//     Password : "8E5A71F6B82D838EED24F1CB0C6AA998651D",
+//     To : 'gourmetica.ro@gmail.com',
+//     From :'gourmetica.ro@gmail.com',
+//     Subject : "New Enquiry",
+//     Body : "Name: " + document.getElementById("name").value
+//     + "<br> Email: " + document.getElementById("email").value
+//     + "<br> Phone: " + document.getElementById("phone").value
+//     + "<br> Message: " + document.getElementById("message").value
+// }).then(
+//   message => alert(message)
+// );
+// }
+
+function sendEmail() {
+  var name = document.getElementsByName("name")[0].value;
+  var email = document.getElementsByName("email")[0].value;
+  var phone = document.getElementsByName("phone")[0].value;
+  var message = document.getElementsByName("message")[0].value;
+
   Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "gourmetica.ro@gmail.com",
-    Password : "8E5A71F6B82D838EED24F1CB0C6AA998651D",
-    To : 'gourmetica.ro@gmail.com',
-    From :'gourmetica.ro@gmail.com',
-    Subject : "New Enquiry",
-    Body : "Name: " + document.getElementById("name").value
-    + "<br> Email: " + document.getElementById("email").value
-    + "<br> Phone: " + document.getElementById("phone").value
-    + "<br> Message: " + document.getElementById("message").value
-}).then(
-  message => alert(message)
-);
+    Host: "smtp.elasticemail.com",
+    Username: "gourmetica.ro@gmail.com",
+    Password: "8E5A71F6B82D838EED24F1CB0C6AA998651D",
+    To: "gourmetica.ro@gmail.com",
+    From: "gourmetica.ro@gmail.com",
+    Subject: "New Enquiry",
+    Body:
+      "Name: " +
+      name +
+      "<br> Email: " +
+      email +
+      "<br> Phone: " +
+      phone +
+      "<br> Message: " +
+      message,
+  }).then(function (message) {
+    alert("Mesajul a fost trimis cu succes!");
+  });
+  
 }
+
+
+
+
 
 // contact form ELASTICEMAIL end

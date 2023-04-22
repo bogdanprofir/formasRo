@@ -7,7 +7,7 @@
 
 body {
     height: 100vh;
-    background-color: #fff;
+    background-color: #ece6e6cc;
 }
 
 /* NAVBAR START */
@@ -125,6 +125,7 @@ header {
     width: 300px;
     height: 0;
     top: 60px;
+    z-index: 9999;
     right: 2rem;
     background: rgba(240, 237, 237, 0.5);
     backdrop-filter: blur(15px);
@@ -136,7 +137,7 @@ header {
 }
 
 .dropdown_menu.open{
-    height: 300px;
+    height: auto;
 
 }
 .dropdown_menu li {
@@ -182,6 +183,197 @@ header {
 
 
 /* Nav bar END */
+
+/* main */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:1rem;
+    min-height: 92vh;
+    padding: 2rem;
+    font-family: 'oswald', sans-serif;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background: rgb(243, 240, 236);
+    border-radius: 2rem;
+    color: #291313;
+}
+
+.container li {
+    list-style: circle;
+    padding: 1rem;
+    margin: 2rem;
+
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro a {
+    color: inherit;
+    text-decoration: none;
+    font-style: italic;
+    font-size: larger;
+}
+
+.intro img {
+    width: 50%;   
+    height: 21rem;
+    border-radius: 2rem;
+    margin: 1rem;
+}
+
+#firstContainer  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#secondContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 10px solid rgba(244, 69, 69, 0.877);
+    padding-top: 1rem;
+}
+.tip1 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 18px;
+}
+.tip1 img {
+    max-width: 100%;
+    width: 50rem;
+    height: 20rem;
+    margin-right: 10px;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.tip1 p {
+    margin-right: 2rem;
+    text-indent: 2rem;
+}
+
+.tip2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 18px;
+}
+
+.tip2 img {
+    max-width: 100%;
+    width: 50rem;
+    height: 20rem;
+    margin-right: 10px;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.tip2 p {
+    margin-left: 2rem;
+}
+
+.tipMasaj {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tarife {
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    margin: 1rem;
+    padding: 2rem;
+    background: rgb(200,161,161);
+    background: -moz-linear-gradient(0deg, rgba(200,161,161,1) 0%, rgba(239,240,231,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(200,161,161,1) 0%, rgba(239,240,231,1) 100%);
+    background: linear-gradient(0deg, rgba(200,161,161,1) 0%, rgba(239,240,231,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c8a1a1",endColorstr="#eff0e7",GradientType=1);
+    border-radius: 1rem;
+    
+    -webkit-box-shadow: -12px 2px 52px 6px rgba(79,10,20,0.73);
+-moz-box-shadow: -12px 2px 52px 6px rgba(79,10,20,0.73);
+box-shadow: -12px 2px 52px 6px rgba(79,10,20,0.73);
+font-family: 'oswald', sans-serif;
+
+    
+}
+
+.tarife li {
+    list-style: none;
+    padding: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarife h2 {
+    margin-top: 1rem;
+}
+@media (max-width: 992px) {
+    #firstContainer {
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    #secondContainer {
+        max-width: 100%;
+        overflow: hidden;
+    }
+    .intro img {
+        width: 100%;
+        height: 20rem;
+    }
+
+    #firstContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    #secondContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    .tip1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .tip1 p {
+        margin-right: 0;
+        margin-top: 1rem;
+    }
+    .tip2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .tip2 p {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+}
+
+
+/* main end */
 
 /* Footer */
 .footer {
